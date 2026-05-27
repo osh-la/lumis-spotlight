@@ -1,51 +1,46 @@
 [
   {
     "id": 1,
-    "name": "Blue single sitter",
-    "category": "HOMES",
-    "image": "/images/productimage/bluecouch.png",
-    "price": 1020
+    "name": "#SN2025 ",
+    "category": "WEDDINGS",
+    "image": "/wedding2.mp4"
   },
   {
     "id": 2,
-    "name": "single office chair",
-    "category": "OFFICES",
-    "image": "/images/productimage/singlecouch.png",
-    "price": 320
+    "name": "Sadiq ❤️ Nafisah",
+    "category": "WEDDING",
+    "image": "/wedding.mp4"
+
   },
   {
     "id": 3,
-    "name": "layback comfy chair",
-    "category": "LOUNGES",
-    "image": "/images/productimage/layback.png",
-    "price": 900
+    "name": " Ssonic Petroleum for the 2026 LNG Qatar Exhibition and Conference",
+    "category": "COOPERATE EVENTS",
+    "image": "/event.mp4"
+  
   },
     {
     "id": 4,
-    "name": "wall deco",
-    "category": "SPA'S",
-    "image": "/images/productimage/walldeco.png",
-    "price": 640
+    "name": "Audrey’s 13th birthday",
+    "category": "BIRTHDAYS",
+    "image": "/birthday2.mp4"
   },
     {
     "id": 5,
-    "name": "conference chairs",
-    "category": "EVENTS",
-    "image": "/images/productimage/diningchair.png",
-    "price": 440
+    "name": "Birthday attitude",
+    "category": "BIRTHDAYS",
+    "image": "/birthday.mp4"
   },
   {
     "id": 6,
-    "name": "conference chairs",
-    "category": "HOMES",
-    "image": "/images/productimage/wallshelf.png",
-    "price": 840
+    "name": "Oge’s Baby Shower",
+    "category": "BABY SHOWERS",
+    "image": "/babyshower.mp4"
   },
   {
     "id": 7,
-    "name": "center table",
-    "category": "OFFICES",
-    "image": "/images/productimage/table.png",
-    "price": 340
+    "name": "Faith. Service. Recognition.",
+    "category": "OCCASIONS",
+    "image": "/faith.mp4"
   }
 ]

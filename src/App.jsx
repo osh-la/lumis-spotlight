@@ -13,7 +13,7 @@ import Home from "./pages/Home";
 import MainLayout from "./Layout/mainLayout";
 import About from "./pages/About";
 import NotFound from "./pages/notFound";
-import ShopPage from "./pages/shop";
+import ShopPage from "./pages/gallery";
 import { TransitionProvider } from "./context/transitionContext";
 
 import { SectionRefsProvider, useSectionRefs } from "./context/sectionRefs";
