@@ -4,11 +4,12 @@ import { useSectionRefs }  from "../../context/sectionRefs";
 
 
 const categories = [
-  { id: 1, title: "HOMES", slug: "homes", img2: "/images/sane.jpeg" },
-  { id: 2, title: "OFFICES", slug: "offices", img2: "/images/office.jpg" },
-  { id: 3, title: "LOUNGES", slug: "lounges", img2: "/images/image5.jpg" },
-  { id: 4, title: "SPA'S ", slug: "spa's", img2: "/images/spa.jpg" },
-  { id: 5, title: "EVENT", slug: "events", img2: "/images/event.jpg" },
+  { id: 1, title: "WEDDINGS", slug: "Weddings", img2: "/wedding.mp4" },
+  { id: 2, title: "COOPERATE EVENTS", slug: "events", img2: "/event.mp4" },
+  { id: 3, title: "OCCASIONS", slug: "occasion", img2: "/faith.mp4" },
+  { id: 4, title: "BABY SHOWERS", slug: "baby shower", img2: "/babyshower.mp4" },
+  { id: 5, title: "BIRTHDAYS ", slug: "birthdays", img2: "/birthday.mp4" },
+  { id: 6, title: "LOCATION COVERAGE", slug: "location", img2: "/location.mp4" },
 ];
 
 export default function Categories() {
@@ -26,28 +27,36 @@ export default function Categories() {
             className="category-slide w-screen h-full flex flex-col md:flex-row
                        items-center justify-center p-6 gap-8 md:gap-16 shrink-0"
           >
-            <div className="relative w-72 h-72 md:w-100 md:h-100 overflow-hidden">
-              <div
-                className="glide-bg absolute inset-0 scale-[1.25] pointer-events-none"
-                style={{
-                  backgroundImage: `url(${cat.img2})`,
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                }}
-              />
-            </div>
+            <div className="relative w-72 h-72 md:w-[28rem] md:h-[28rem] overflow-hidden rounded-3xl">
+  {cat.img2.endsWith(".mp4") ? (
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover scale-110"
+    >
+      <source src={cat.img2} type="video/mp4" />
+    </video>
+  ) : (
+    <div
+      className="absolute inset-0 scale-110 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${cat.img2})`,
+      }}
+    />
+  )}
+</div>
 
             <div className="text-center md:text-left text-zinc-900 max-w-md">
               <h1 className="text-3xl md:text-7xl font-bold mb-4">{cat.title}</h1>
               <Link
                 to={`/shop/${cat.slug}`}
                 className="border-2 border-zinc-900 py-2 px-4 rounded-full
-                           text-sm md:text-base flex items-center gap-2"
-              >
-                SHOP PIECES FOR {cat.title}
+                           text-sm md:text-base flex items-center justify-between gap-2"
+              >{cat.title}
                 <div className="rounded-full bg-white p-2">
-                  <img className="w-5 h-5" src="/images/right.png" alt="" />
+                <img className="w-5 h-5" src="/images/right.png" alt="" />
                 </div>
               </Link>
             </div>

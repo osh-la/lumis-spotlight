@@ -13,7 +13,7 @@ export default function ShopPage() {
   const { products } = useProducts();
   const { categorySlug } = useParams();
 
-  const categories = ["All", "HOMES", "OFFICES", "LOUNGES", "SPA'S", "EVENTS"];
+  const categories = ["All", "WEDDINGS", "COOPERATE EVENTS", "OCCASIONS", "BIRTHDAYS", "EVENTS"];
   const [filter, setFilter] = useState("All");
 
   const containerRef = useRef(null);

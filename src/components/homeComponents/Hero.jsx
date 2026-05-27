@@ -8,7 +8,7 @@ export default function Hero() {
     <section
     id="hero"
       ref={hero}
-      className="relative  overflow-hidden bg-[#d9b38c] text-black">
+      className="relative overflow-hidden bg-[#d9b38c] text-black">
       {/* BACKGROUND IMAGE */}
       <img
         ref={videoRef}
@@ -50,10 +50,19 @@ export default function Hero() {
           ref={heroText}
           className="mt-8 max-w-2xl text-lg md:text-2xl font-light leading-relaxed text-black/80"
         >
-          <p>
-            Where storytelling and creativity collide to create
-            unforgettable digital experiences.
-          </p>
+       <ul className="flex flex-nowrap justify-center gap-6 text-lg  list-none">
+  <li className="flex items-center gap-2">
+    <span>•</span> Mobile Photography
+  </li>
+
+  <li className="flex items-center gap-2">
+    <span>•</span> Mobile Videography
+  </li>
+
+  <li className="flex items-center gap-2">
+    <span>•</span> Event & Lifestyle Content Creation
+  </li>
+</ul>
         </div>
 
         {/* CTA */}
@@ -62,7 +71,7 @@ export default function Hero() {
           className="mt-14 flex flex-col items-center justify-center"
         >
           <TransitionLink to="/shop">
-            <button className="group relative overflow-hidden rounded-full border border-black/20 bg-white/30 backdrop-blur-xl px-8 py-4 transition-all duration-500 hover:scale-105 hover:bg-black hover:text-white">
+            <button className="group relative overflow-hidden rounded-full border border-black bg-red-50 backdrop-blur-xl px-8 py-4 transition-all duration-500 hover:scale-105 hover:bg-transparent hover:text-white">
               
               {/* Glow */}
               <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-r from-white/10 via-white/20 to-white/10" />

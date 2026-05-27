@@ -14,7 +14,7 @@ const History = () => {
       <img
         ref={historyBg}
         className="absolute top-0 h-full w-full object-cover object-right"
-        src="/images/history.jpg"
+        src="/images/lumi1.jpg"
         alt="History background"
       />
 
@@ -24,8 +24,7 @@ const History = () => {
             <p className="text-base md:text-lg">Since</p>
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold">2024</h1>
             <p className="text-sm md:text-base">
-              We create furniture masterpieces that tell stories and store
-              memories that don’t fade with trends.
+              We craft cinematic visuals that capture emotion, preserve memories, and tell stories that live far beyond the moment.
             </p>
             <Link to="/shop">
               <button className="border-2  border-stone-800 rounded-full py-2 px-6 text-sm md:text-base gap-2">

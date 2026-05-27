@@ -51,7 +51,7 @@ const TransitionOverlay = ({ onComplete }) => {
         ref={textRef}
         className="font-extrabold text-3xl md:text-8xl"
       >
-        SANE VILLAGE
+        Lumi spotlight
       </h1>
     </div>
   );
