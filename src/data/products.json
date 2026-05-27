@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Blue single sitter",
+    "category": "HOMES",
+    "image": "/images/productimage/bluecouch.png",
+    "price": 1020
+  },
+  {
+    "id": 2,
+    "name": "single office chair",
+    "category": "OFFICES",
+    "image": "/images/productimage/singlecouch.png",
+    "price": 320
+  },
+  {
+    "id": 3,
+    "name": "layback comfy chair",
+    "category": "LOUNGES",
+    "image": "/images/productimage/layback.png",
+    "price": 900
+  },
+    {
+    "id": 4,
+    "name": "wall deco",
+    "category": "SPA'S",
+    "image": "/images/productimage/walldeco.png",
+    "price": 640
+  },
+    {
+    "id": 5,
+    "name": "conference chairs",
+    "category": "EVENTS",
+    "image": "/images/productimage/diningchair.png",
+    "price": 440
+  },
+  {
+    "id": 6,
+    "name": "conference chairs",
+    "category": "HOMES",
+    "image": "/images/productimage/wallshelf.png",
+    "price": 840
+  },
+  {
+    "id": 7,
+    "name": "center table",
+    "category": "OFFICES",
+    "image": "/images/productimage/table.png",
+    "price": 340
+  }
+]
