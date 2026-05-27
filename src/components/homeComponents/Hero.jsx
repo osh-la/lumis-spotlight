@@ -6,9 +6,9 @@ export default function Hero() {
 
   return (
     <section
+    id="hero"
       ref={hero}
-      className="relative h-screen overflow-hidden bg-[#d9b38c] text-black"
-    >
+      className="relative  overflow-hidden bg-[#d9b38c] text-black">
       {/* BACKGROUND IMAGE */}
       <img
         ref={videoRef}
