@@ -14,7 +14,7 @@ const History = () => {
       <img
         ref={historyBg}
         className="absolute top-0 h-full w-full object-cover object-right"
-        src="/images/lumi1.jpg"
+        src="/images/about.png"
         alt="History background"
       />
 

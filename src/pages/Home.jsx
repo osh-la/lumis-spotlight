@@ -12,7 +12,7 @@ const Home = () => {
       <Categories />
       <History />
       <LookoutSection/>
-      <Subscribe />
+      <Subscribe/>
     </section>
   );
 };
