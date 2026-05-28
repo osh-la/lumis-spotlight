@@ -51,7 +51,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <img
             className="w-full md:w-2/5 rounded-lg"
-            src="/images/chairs.png"
+            src="/images/lumi2.jpg"
             alt="Chairs"
           />
           <div className="flex flex-col gap-4 text-base md:text-lg text-center md:text-left">
