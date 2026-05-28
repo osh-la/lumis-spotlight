@@ -26,7 +26,7 @@ const History = () => {
             <p className="text-sm md:text-base">
               We craft cinematic visuals that capture emotion, preserve memories, and tell stories that live far beyond the moment.
             </p>
-            <Link to="/shop">
+            <Link to="/gallery">
               <button className="border-2  border-stone-800 rounded-full py-2 px-6 text-sm md:text-base gap-2">
                 <div className="flex  items-center justify-center ">
                   EXPLORE COLLECTION

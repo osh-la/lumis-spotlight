@@ -8,7 +8,7 @@ const Footer = () => {
        
         <div className="flex justify-around gap-y-4 text-sm sm:text-base">
           <Link className="list-none hover:underline cursor-pointer" to="/">Home</Link>
-          <Link className="list-none hover:underline cursor-pointer" to="/shop">EXPLORE</Link>
+          <Link className="list-none hover:underline cursor-pointer" to="/gallery">EXPLORE</Link>
         </div>
 
      

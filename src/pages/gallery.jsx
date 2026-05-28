@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ShopPage() {
+export default function Gallery() {
   const { addToCart } = useCart();
   const { products } = useProducts();
   const { categorySlug } = useParams();

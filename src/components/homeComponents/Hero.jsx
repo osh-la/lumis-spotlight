@@ -91,7 +91,7 @@ export default function Hero() {
           ref={POD}
           className="mt-10 sm:mt-14 flex flex-col items-center justify-center"
         >
-          <TransitionLink to="/shop">
+          <TransitionLink to="/gallery">
             <button
               className="
                 group

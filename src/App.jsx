@@ -13,7 +13,7 @@ import Home from "./pages/Home";
 import MainLayout from "./Layout/mainLayout";
 import About from "./pages/About";
 import NotFound from "./pages/notFound";
-import ShopPage from "./pages/gallery";
+import Gallery from "./pages/gallery";
 import { TransitionProvider } from "./context/transitionContext";
 
 import { SectionRefsProvider, useSectionRefs } from "./context/sectionRefs";
@@ -271,8 +271,8 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/shop/:categorySlug" element={<ShopPage />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery/:categorySlug" element={<Gallery />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     )
