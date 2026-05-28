@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useProducts } from "../context/productprovider";
-import { useCart } from "../context/cartProvider";
 import toast from "react-hot-toast";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,11 +8,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Gallery() {
-  const { addToCart } = useCart();
   const { products } = useProducts();
   const { categorySlug } = useParams();
 
-  const categories = ["All", "WEDDINGS", "COOPERATE EVENTS", "OCCASIONS", "BIRTHDAYS", "BABY SHOWERS"];
+  const categories = [
+    "All",
+    "WEDDINGS",
+    "COOPERATE EVENTS",
+    "OCCASIONS",
+    "BIRTHDAYS",
+    "BABY SHOWERS",
+  ];
   const [filter, setFilter] = useState("All");
 
   const containerRef = useRef(null);
@@ -22,7 +27,7 @@ export default function Gallery() {
   useEffect(() => {
     if (categorySlug) {
       const matched = categories.find(
-        (c) => c.toLowerCase() === categorySlug.toLowerCase()
+        (c) => c.toLowerCase() === categorySlug.toLowerCase(),
       );
       setFilter(matched || "All");
     }
@@ -32,7 +37,7 @@ export default function Gallery() {
     filter === "All"
       ? products
       : products.filter(
-          (p) => p.category.toLowerCase() === filter.toLowerCase()
+          (p) => p.category.toLowerCase() === filter.toLowerCase(),
         );
 
   useEffect(() => {
@@ -52,24 +57,23 @@ export default function Gallery() {
               scrub: true,
               id: `image-${i}`,
             },
-          }
+          },
         );
       });
     }, containerRef);
 
     return () => {
-       try {
-    ctx.revert(); // only if ctx is defined and valid
-  } catch (err) {
-    console.warn("GSAP revert error:", err.message);
-  }
-};
-      // ctx.revert();
+      try {
+        ctx.revert();
+      } catch (err) {
+        console.warn("GSAP revert error:", err.message);
+      }
+    };
+    // ctx.revert();
   }, [filtered]);
 
   return (
     <div ref={containerRef} className=" px-4 py-12 space-y-8 bg-red-50">
-
       <div className="mt-12 flex flex-wrap gap-4">
         {categories.map((cat) => (
           <button
@@ -91,11 +95,15 @@ export default function Gallery() {
               <video
                 ref={(el) => (imageRefs.current[i] = el)}
                 src={p.image}
-                alt={p.name}
-                className="w-full h-100 object-cover"
-              />
-
-       
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls={false}
+                className="w-full h-[500px] object-cover"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         ))}
