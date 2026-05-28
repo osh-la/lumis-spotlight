@@ -68,9 +68,9 @@ export default function Gallery() {
   }, [filtered]);
 
   return (
-    <div ref={containerRef} className="mt-10 px-4 py-12 space-y-8 bg-red-50">
+    <div ref={containerRef} className=" px-4 py-12 space-y-8 bg-red-50">
 
-      <div className="flex flex-wrap gap-4">
+      <div className="mt-12 flex flex-wrap gap-4">
         {categories.map((cat) => (
           <button
             key={cat}
