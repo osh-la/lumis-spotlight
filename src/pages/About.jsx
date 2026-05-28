@@ -71,8 +71,8 @@ export default function About() {
             </p>
             <p>
               It all started when i saw this tall dark very handsome and good looking guy walking towards me at AYA, the aura of his presence blew me right away! i didnt know who this was but i knew i wanted to see him again,
-             but i am very shy and definitly wasnt going to stop him or ask for his name or his number but i knew i wouldnt be happy if i didnt get to see him again, he was getting closer, i knew i had to think and act fast, so i took out my phone and started making a video of him as he walked towards me! the closer he got the more angles i changed
-             so i could capture all his essence and more importantly not get caught while at it, when he got where i was he looked me in the eyes, help my arms and said "hi, im oshla..i know what you were doing, i hope it turns out as great as you hope" and he walked away majestically, something told me this guy was a prince and yes he smelled amazing too!
+             but i am very shy so i definitly wasnt going to stop him and ask for his name or his number but i knew i wouldnt be happy if i didnt get to see him again, he was getting closer, i knew i had to think and act fast, so i took out my phone and started making a video of him as he walked towards me! the closer he got the more angles i changed
+             so i could capture all his essence and more importantly not get caught while at it, when he got where i was he looked me in the eyes, held my arms and said "hi, im oshla..i know what you were doing, i hope it turns out as great as you hope" and he walked away majestically, something told me this guy was a prince and yes he smelled amazing too!
              when i got home i watched those videos and omg! it was the best thing i had seen all day!it was in that moment i realized i was good at this and i decided i was going to make the best out of this and well, as thy say.. the rest is history.
             </p>
           </div>
