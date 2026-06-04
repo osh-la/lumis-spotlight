@@ -37,7 +37,7 @@ const LookoutSection = () => {
             meaningful stories, and create visuals that live far beyond the
             moment they were captured.
           </p>
-          <Link to="/booking">
+          <Link to="/onboarding">
             <button className="rounded-full bg-black text-white px-8 py-4 text-sm md:text-base uppercase">
               Book a Session
             </button>

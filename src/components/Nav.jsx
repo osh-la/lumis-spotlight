@@ -14,9 +14,16 @@ const Nav = ({ onCartClick }) => {
           </TransitionLink>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex items-center gap-4">
           <span className="cursor-pointer hover:underline">
             <TransitionLink to="/gallery">Gallery</TransitionLink>
+          </span>
+          <span>
+            <TransitionLink to="/onboarding">
+              <button className="rounded-full bg-black text-white px-8 py-4 text-sm md:text-base uppercase">
+                Book a Session
+              </button>
+            </TransitionLink>
           </span>
         </div>
       </div>

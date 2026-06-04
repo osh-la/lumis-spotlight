@@ -22,6 +22,7 @@ import { SectionRefsProvider, useSectionRefs } from "./context/sectionRefs";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
+import OnboardingForm from "./pages/onboarding";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -272,6 +273,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/onboarding" element={<OnboardingForm />} />
         <Route path="/gallery/:categorySlug" element={<Gallery />} />
         <Route path="*" element={<NotFound />} />
       </Route>
