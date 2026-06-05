@@ -147,7 +147,7 @@ export default function OnboardingForm() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf9f6] text-[#1a1a18] font-sans">
+    <div className="min-h-screen bg-red-50 text-[#1a1a18] font-sans">
       <div className="max-w-[780px] mx-auto px-4 md:px-8 py-10 md:py-14">
 
         {/* HEADER */}

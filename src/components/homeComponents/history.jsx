@@ -11,13 +11,16 @@ const History = () => {
       ref={historySection}
       className="bg-red-50 relative h-[100vh] md:h-[200vh] overflow-hidden"
     >
-      <img
-        ref={historyBg}
-        className="absolute top-0 h-full w-full object-cover object-right"
-        src="/images/about.png"
-        alt="History background"
-      />
-
+<video
+  ref={historyBg}
+  className="absolute top-0 h-full w-full object-cover object-right"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source src="/lumivid.MP4" type="video/mp4" />
+</video>
       <div className="sticky top-1/4 flex items-center justify-center z-10 px-4">
         <div className="w-full max-w-3xl h-auto md:h-[70vh] text-center flex items-center justify-center text-stone-800 font-medium bg-gray-100 bg-opacity-90 rounded-xl p-6 md:p-12">
           <div className="w-full md:w-4/5 space-y-4">

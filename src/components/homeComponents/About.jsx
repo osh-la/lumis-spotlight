@@ -1,4 +1,3 @@
-// About.jsx
 import TransitionLink from "../transitionLink";
 import { useSectionRefs } from "../../context/sectionRefs";
 
@@ -8,39 +7,67 @@ export default function About() {
   return (
     <section
       ref={about}
-      className="relative h-screen overflow-hidden py-16 px-4 bg-red-50 flex flex-col-reverse md:flex-row items-center justify-around gap-10 md:gap-0"
+      className="relative overflow-hidden bg-red-50 px-6 py-20 md:px-20"
     >
-      <div ref={aboutImage1} className="relative h-64 w-64 md:h-80 md:w-80">
-        <img
-          ref={aboutImage}
-          src="/images/about.png"
-          alt="Lamp 1"
-          className="block w-full h-full object-contain"
-        />
-        <img
-          src="/images/about2.png"
-          alt="Lamp 2"
-          className="absolute bottom-[-20%] right-[-20%] w-32 md:w-48"
-        />
-      </div>
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-16 md:flex-row md:justify-between">
+        
+     
+        <div
+          ref={aboutImage1}
+          className="relative w-full max-w-md flex justify-center"
+        >
+          <video
+            ref={aboutImage}
+            src="/lumivid1.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="h-[420px] w-full rounded-3xl object-cover shadow-xl"
+          >
+            Your browser does not support the video tag.
+          </video>
 
-      <div
-        ref={aboutHeader}
-        className="w-full md:w-3/5 space-y-4 text-lg md:text-xl flex flex-col justify-center md:justify-start  md:text-left"
-      >
-        <p className="uppercase tracking-[0.5em] md:tracking-[1em] text-xs md:text-base font-medium">
-          WHERE STORYTELLING MEETS CREATIVITY.
-        </p>
+          <img
+            src="/images/about.png"
+            alt="Decoration"
+            className="absolute -bottom-10 -right-6 w-28 md:w-52"
+          />
+        </div>
 
-        <p></p>
-        <TransitionLink to="/About">
-          <button className="tracking-[0.2em] border-2 py-2 px-6 rounded-full border-gray-800 flex items-center gap-2">
-            ABOUT US
-            <div className="rounded-full bg-white p-2">
-              <img className="w-5 h-5" src="/images/right.png" alt="" />
-            </div>
-          </button>
-        </TransitionLink>
+        {/* TEXT */}
+        <div
+          ref={aboutHeader}
+          className="flex w-full max-w-2xl flex-col items-center space-y-8 text-center md:items-start md:text-left"
+        >
+          <p className="text-xs font-medium uppercase tracking-[0.4em] md:text-sm md:tracking-[0.8em]">
+            WHERE STORYTELLING MEETS CREATIVITY.
+          </p>
+
+          <h2 className="text-4xl font-light leading-tight md:text-6xl">
+            We don’t just create videos — we craft moments that live forever.
+          </h2>
+
+          <p className="max-w-xl text-base leading-relaxed text-gray-700 md:text-lg">
+            From weddings to brand stories, Lumi Spotlight captures emotion,
+            movement, and atmosphere in a way that feels cinematic, authentic,
+            and unforgettable.
+          </p>
+
+          <TransitionLink to="/About">
+            <button className="flex items-center gap-3 rounded-full border-2 border-gray-800 px-6 py-3 tracking-[0.2em] transition hover:bg-black hover:text-white">
+              ABOUT US
+
+              <div className="rounded-full bg-white p-2">
+                <img
+                  className="h-4 w-4"
+                  src="/images/right.png"
+                  alt=""
+                />
+              </div>
+            </button>
+          </TransitionLink>
+        </div>
       </div>
     </section>
   );
