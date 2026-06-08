@@ -57,13 +57,13 @@ export default function Categories() {
               )}
             </div>
 
-            <div className="text-center md:text-left text-zinc-900 max-w-md">
+            <div className="text-left text-zinc-900 md:max-w-md">
               <h1 className="text-3xl md:text-7xl font-bold mb-4">
                 {cat.title}
               </h1>
               <Link
                 to={`/gallery/${cat.slug}`}
-                className="border-2 border-zinc-900 py-2 px-4 rounded-full
+                className="border-2 border-zinc-900 py-2 px-4 w-full rounded-full
                            text-sm md:text-base flex items-center justify-between gap-2"
               >
                 {cat.title}
