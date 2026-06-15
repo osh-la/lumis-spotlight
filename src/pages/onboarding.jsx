@@ -108,10 +108,10 @@ export default function OnboardingForm() {
 
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_xaks21m",
+        "template_xxfrrjp",
         templateParams,
-        "YOUR_PUBLIC_KEY"
+        "yozINfgy0tCyuyq-J"
       );
 
       setSuccess(true);
