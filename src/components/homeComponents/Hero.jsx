@@ -8,129 +8,141 @@ export default function Hero() {
     <section
       id="hero"
       ref={hero}
-      className="relative overflow-hidden bg-[#d9b38c] text-black min-h-screen"
+      className="relative min-h-screen bg-[#f7f4ee] overflow-hidden"
     >
-      {/* BACKGROUND IMAGE */}
-      <img
-        ref={videoRef}
-        src="/lumi.png"
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover scale-105"
-      />
+      <div className="grid lg:grid-cols-2 min-h-screen">
+        {/* LEFT SIDE */}
+        <div className="flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-24">
+          <div className="mb-8">
+            <span className="uppercase tracking-[0.35em] text-xs text-[#8a8a84]">
+              Mobile Photography & Videography
+            </span>
+          </div>
 
-      {/* OVERLAYS */}
-      <div className="absolute inset-0" />
-      <div className="absolute inset-0" />
-      <div className="absolute inset-0" />
-
-      {/* GRAIN */}
-      <div className="absolute inset-0 opacity-[0.08] mix-blend-overlay" />
-
-      {/* CONTENT */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 sm:px-6 text-center py-20">
-        
-        {/* SMALL LABEL */}
-        <div className="mb-4 sm:mb-6 tracking-[0.25em] sm:tracking-[0.4em] uppercase text-xs sm:text-sm md:text-base text-black/70">
-        </div>
-
-        {/* MAIN TITLE */}
-        <h1
-          ref={heroHeader}
-          className="
-            max-w-6xl
-            text-5xl
-            sm:text-6xl
-            md:text-7xl
-            lg:text-8xl
-            xl:text-[10rem]
-            font-black
-            uppercase
-            leading-none
-            tracking-tight
-          "
-        >
-          Lumi
-          <span className="block italic font-light tracking-normal">
+          <h1
+            ref={heroHeader}
+            className="
+              font-serif
+              text-6xl
+              sm:text-7xl
+              md:text-8xl
+              xl:text-[9rem]
+              leading-[0.9]
+              font-normal
+              text-[#1a1a18]
+            "
+          >
+            Lumi
+            <br />
             Spotlight
-          </span>
-        </h1>
+          </h1>
 
-        {/* SUBTEXT */}
-        <div
-          ref={heroText}
-          className="
-            mt-6
-            sm:mt-8
-            max-w-4xl
-            text-sm
-            sm:text-base
-            md:text-lg
-            lg:text-xl
-            font-light
-            leading-relaxed
-            text-black/80
-          "
-        >
-          <ul className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-5 lg:gap-6 list-none">
-            <li className="flex items-center gap-2">
-              <span>•</span> Mobile Photography
-            </li>
+          <p
+            ref={heroText}
+            className="
+              mt-8
+              max-w-md
+              text-[#5d5d58]
+              text-base
+              md:text-lg
+              leading-relaxed
+            "
+          >
+            Capturing stories through mobile photography,
+            cinematic videography and lifestyle content
+            creation that feels timeless.
+          </p>
 
-            <li className="flex items-center gap-2">
-              <span>•</span> Mobile Videography
-            </li>
+          <div
+            ref={POD}
+            className="mt-12 flex flex-wrap gap-4"
+          >
+            <TransitionLink to="/gallery">
+              <button
+                className="
+                  px-8
+                  py-4
+                  bg-[#1a1a18]
+                  text-white
+                  uppercase
+                  tracking-[0.15em]
+                  text-sm
+                  hover:bg-[#333]
+                  transition-all
+                "
+              >
+                View Portfolio
+              </button>
+            </TransitionLink>
 
-            <li className="flex items-center gap-2 text-center">
-              <span>•</span> Event & Lifestyle Content Creation
-            </li>
-          </ul>
+            <TransitionLink to="/onboarding">
+              <button
+                className="
+                  px-8
+                  py-4
+                  border
+                  border-[#1a1a18]
+                  uppercase
+                  tracking-[0.15em]
+                  text-sm
+                  hover:bg-[#1a1a18]
+                  hover:text-white
+                  transition-all
+                "
+              >
+                Book Session
+              </button>
+            </TransitionLink>
+          </div>
+
+          <div className="mt-16 flex gap-8 text-sm text-[#8a8a84]">
+            <span>Photography</span>
+            <span>Videography</span>
+            <span>Content Creation</span>
+          </div>
         </div>
 
-        {/* CTA */}
-        <div
-          ref={POD}
-          className="mt-10 sm:mt-14 flex flex-col items-center justify-center"
-        >
-          <TransitionLink to="/gallery">
-            <button
-              className="
-                group
-                relative
-                overflow-hidden
-                rounded-full
-                border
-                border-black
-                bg-red-50
-                backdrop-blur-xl
-                px-6
-                sm:px-8
-                py-3
-                sm:py-4
-                transition-all
-                duration-500
-                hover:scale-105
-                hover:bg-transparent
-                hover:text-white
-              "
-            >
-              {/* Glow */}
-              <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-r from-white/10 via-white/20 to-white/10" />
+        {/* RIGHT SIDE */}
+        <div className="relative">
+          <img
+            ref={videoRef}
+            src="/lumi.png"
+            alt="Lumi Spotlight"
+            className="
+              absolute
+              inset-0
+              h-full
+              w-full
+              object-cover
+            "
+          />
 
-              <div className="relative flex items-center gap-3 sm:gap-4 text-xs sm:text-sm md:text-base tracking-[0.15em] sm:tracking-[0.2em] uppercase">
-                Explore
+          <div className="absolute inset-0 bg-black/10" />
 
-                <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-black text-white transition-all duration-500 group-hover:bg-white group-hover:text-black">
-                  →
-                </div>
-              </div>
-            </button>
-          </TransitionLink>
+          {/* FLOATING CARD */}
+          <div
+            className="
+              absolute
+              bottom-8
+              left-8
+              bg-white/90
+              backdrop-blur-sm
+              px-6
+              py-5
+              max-w-xs
+            "
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-[#8a8a84]">
+              Based in Nigeria
+            </p>
+
+            <p className="mt-2 text-sm text-[#1a1a18] leading-relaxed">
+              Visual storytelling for brands,
+              entrepreneurs and memorable events.
+            </p>
+          </div>
         </div>
       </div>
-
-      {/* LIGHT BLOBS */}
-      <div className="absolute -top-20 -left-20 h-48 w-48 sm:h-72 sm:w-72 rounded-full" />
-      <div className="absolute bottom-0 right-0 h-64 w-64 sm:h-96 sm:w-96 rounded-full" />
     </section>
   );
 }
