@@ -662,23 +662,7 @@ export default function OnboardingForm() {
   </div>
 </div>
 
-          {/* EXCLUSIONS */}
-
-          <div className="mb-8 flex flex-col gap-1">
-
-            <label className="text-[11px] font-medium uppercase tracking-[0.06em] text-[#8a8a84]">
-              Exclusions
-            </label>
-
-            <textarea
-              name="exclusions"
-              placeholder="Any exclusions..."
-              value={formData.exclusions}
-              onChange={handleChange}
-              className="w-full min-h-[100px] resize-y bg-[#faf9f6] border border-[#c8c6bc] px-3 py-3 text-[14px] outline-none focus:border-[#c8a96e] focus:bg-white"
-            />
-
-          </div>
+      
 
           {/* SUBMIT */}
 
