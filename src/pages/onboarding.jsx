@@ -449,42 +449,218 @@ export default function OnboardingForm() {
 
           {/* AGREEMENTS */}
 
-          <div className="space-y-4 mb-8">
+{/* SECTION 03 */}
 
-            {[
-              {
-                name: "timeline_agree",
-                text: "I agree to the delivery timeline.",
-              },
-              {
-                name: "revision_agree",
-                text: "I agree to the revision policy.",
-              },
-              {
-                name: "payment_agree",
-                text: "I agree to the payment policy.",
-              },
-            ].map((item) => (
-              <div
-                key={item.name}
-                className="flex items-start gap-3"
-              >
-                <input
-                  type="checkbox"
-                  name={item.name}
-                  checked={formData[item.name]}
-                  onChange={handleChange}
-                  className="mt-1 w-4 h-4 accent-[#8a6f3e]"
-                />
+<div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+  <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
+    <span className="text-[10px] uppercase tracking-[0.12em] text-[#8a8a84] min-w-[68px]">
+      Section 03
+    </span>
 
-                <label className="text-[13px] text-[#4a4a46] leading-relaxed">
-                  {item.text}
-                </label>
+    <span
+      className="text-[15px]"
+      style={{ fontFamily: "'DM Serif Display', serif" }}
+    >
+      Delivery Timeline
+    </span>
+  </div>
 
-              </div>
-            ))}
+  <div className="p-6">
+    <div className="bg-[#f2f0ea] border-l-[3px] border-[#c8a96e] rounded-r px-5 py-4 mb-5 text-[13.5px] text-[#4a4a46] leading-[1.75]">
+      <strong className="text-[#1a1a18]">Delivery policy:</strong> All
+      edited content — reels and photos — will be delivered within{" "}
+      <strong>3 business days</strong> from the shoot date. Rush delivery
+      requests are subject to availability and may attract an additional
+      fee. Lumi Spotlight is not liable for delays caused by client-side
+      factors such as late feedback or delayed payment.
+    </div>
 
-          </div>
+    <div className="flex items-start gap-[10px]">
+      <input
+        type="checkbox"
+        name="timeline_agree"
+        checked={formData.timeline_agree}
+        onChange={handleChange}
+        className="mt-[3px] w-[15px] h-[15px] accent-[#8a6f3e]"
+      />
+
+      <label className="text-[13px] text-[#4a4a46] leading-[1.55]">
+        I have read and agree to the 3-day delivery timeline policy. *
+      </label>
+    </div>
+  </div>
+</div>
+
+{/* SECTION 04 */}
+
+<div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+  <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
+    <span className="text-[10px] uppercase tracking-[0.12em] text-[#8a8a84] min-w-[68px]">
+      Section 04
+    </span>
+
+    <span
+      className="text-[15px]"
+      style={{ fontFamily: "'DM Serif Display', serif" }}
+    >
+      Content Usage Rights
+    </span>
+  </div>
+
+  <div className="p-6">
+    <div className="bg-[#f2f0ea] border-l-[3px] border-[#c8a96e] rounded-r px-5 py-4 mb-5 text-[13.5px] text-[#4a4a46] leading-[1.75]">
+      <strong className="text-[#1a1a18]">Usage rights:</strong> By
+      submitting this form, the client grants{" "}
+      <strong>Lumi Spotlight</strong> the right to use produced content for
+      promotional purposes — including posting on Instagram, TikTok, and
+      inclusion in the portfolio. Credit will be given where applicable.
+      Content will not be sold to third parties.
+    </div>
+
+    <div className="flex flex-col gap-1">
+      <label className="text-[11px] font-medium uppercase tracking-[0.06em] text-[#8a8a84]">
+        Exclusions
+        <span className="normal-case tracking-normal font-light ml-1">
+          (optional)
+        </span>
+      </label>
+
+      <textarea
+        name="exclusions"
+        value={formData.exclusions}
+        onChange={handleChange}
+        placeholder="List any content you do not want published publicly — e.g. specific shots, locations, or platforms..."
+        className="w-full min-h-[80px] resize-y bg-[#faf9f6] border border-[#c8c6bc] px-3 py-[9px] text-[14px] outline-none focus:border-[#c8a96e] focus:bg-white"
+      />
+    </div>
+  </div>
+</div>
+
+{/* SECTION 05 */}
+
+<div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+  <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
+    <span className="text-[10px] uppercase tracking-[0.12em] text-[#8a8a84] min-w-[68px]">
+      Section 05
+    </span>
+
+    <span
+      className="text-[15px]"
+      style={{ fontFamily: "'DM Serif Display', serif" }}
+    >
+      Revision Policy
+    </span>
+  </div>
+
+  <div className="p-6">
+    <div className="bg-[#f2f0ea] border-l-[3px] border-[#c8a96e] rounded-r px-5 py-4 mb-5 text-[13.5px] text-[#4a4a46] leading-[1.75]">
+      <strong className="text-[#1a1a18]">Revision policy:</strong> Each
+      booking includes a maximum of <strong>2 rounds of revisions.</strong>{" "}
+      A revision round covers one consolidated set of feedback submitted at
+      a time. Requests beyond the two included rounds will be charged
+      additionally, communicated before proceeding. All revision requests
+      must be submitted within <strong>5 days</strong> of receiving the
+      initial delivery.
+    </div>
+
+    <div className="flex items-start gap-[10px]">
+      <input
+        type="checkbox"
+        name="revision_agree"
+        checked={formData.revision_agree}
+        onChange={handleChange}
+        className="mt-[3px] w-[15px] h-[15px] accent-[#8a6f3e]"
+      />
+
+      <label className="text-[13px] text-[#4a4a46] leading-[1.55]">
+        I understand I am entitled to 2 revision rounds, and that
+        additional rounds will incur extra charges. *
+      </label>
+    </div>
+  </div>
+</div>
+
+{/* SECTION 06 */}
+
+<div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+  <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
+    <span className="text-[10px] uppercase tracking-[0.12em] text-[#8a8a84] min-w-[68px]">
+      Section 06
+    </span>
+
+    <span
+      className="text-[15px]"
+      style={{ fontFamily: "'DM Serif Display', serif" }}
+    >
+      Payment Plan
+    </span>
+  </div>
+
+  <div className="p-6">
+    <div className="grid md:grid-cols-2 gap-4 mb-5">
+      <div className="border border-[#c8a96e] rounded p-4 bg-[#f5edd8]">
+        <div
+          className="text-[36px] leading-none text-[#8a6f3e] mb-1"
+          style={{ fontFamily: "'DM Serif Display', serif" }}
+        >
+          50%
+        </div>
+
+        <div className="text-[12px] font-medium uppercase tracking-[0.06em] text-[#8a8a84] mb-2">
+          Before the shoot
+        </div>
+
+        <div className="text-[13px] text-[#4a4a46] leading-[1.55]">
+          An upfront deposit of 50% of the agreed total is required to
+          confirm and validate your booking. No date is secured until this
+          payment is received.
+        </div>
+      </div>
+
+      <div className="border border-[#e2e0d8] rounded p-4 bg-[#faf9f6]">
+        <div
+          className="text-[36px] leading-none text-[#8a6f3e] mb-1"
+          style={{ fontFamily: "'DM Serif Display', serif" }}
+        >
+          50%
+        </div>
+
+        <div className="text-[12px] font-medium uppercase tracking-[0.06em] text-[#8a8a84] mb-2">
+          After the shoot
+        </div>
+
+        <div className="text-[13px] text-[#4a4a46] leading-[1.55]">
+          The remaining balance is due immediately after the shoot is
+          completed. Edited content will only be delivered upon confirmation
+          of full payment.
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-[#edf4fb] border border-[#a8c8e8] rounded px-5 py-4 text-[13px] text-[#2c5282] leading-[1.65] mb-5">
+      <strong>Please note:</strong> Payment details will be communicated
+      directly after this form is submitted. All prices are agreed upon
+      before booking confirmation. Lumi Spotlight reserves the right to
+      cancel a booking if the deposit is not received within{" "}
+      <strong>48 hours</strong> of agreement.
+    </div>
+
+    <div className="flex items-start gap-[10px]">
+      <input
+        type="checkbox"
+        name="payment_agree"
+        checked={formData.payment_agree}
+        onChange={handleChange}
+        className="mt-[3px] w-[15px] h-[15px] accent-[#8a6f3e]"
+      />
+
+      <label className="text-[13px] text-[#4a4a46] leading-[1.55]">
+        I understand and agree to the payment plan — 50% deposit before the
+        shoot and 50% balance immediately after. *
+      </label>
+    </div>
+  </div>
+</div>
 
           {/* EXCLUSIONS */}
 
