@@ -675,7 +675,7 @@ export default function OnboardingForm() {
             >
               {loading
                 ? "Submitting..."
-                : "Submit Onboarding Form"}
+                : "Submit Form"}
             </button>
 
             <p className="text-[12px] text-[#8a8a84] text-center">
