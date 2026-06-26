@@ -180,7 +180,7 @@ export default function OnboardingForm() {
 
           {/* SECTION 01 */}
 
-          <div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+          <div className="mb-8 border border-[#e2e0d8] rounded  overflow-hidden">
 
             <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
 
@@ -295,7 +295,7 @@ export default function OnboardingForm() {
 
           {/* SECTION 02 */}
 
-          <div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+          <div className="mb-8 border border-[#e2e0d8] rounded overflow-hidden">
 
             <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
 
@@ -451,7 +451,7 @@ export default function OnboardingForm() {
 
 {/* SECTION 03 */}
 
-<div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+<div className="mb-8 border border-[#e2e0d8] rounded overflow-hidden">
   <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
     <span className="text-[10px] uppercase tracking-[0.12em] text-[#8a8a84] min-w-[68px]">
       Section 03
@@ -493,7 +493,7 @@ export default function OnboardingForm() {
 
 {/* SECTION 04 */}
 
-<div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+<div className="mb-8 border border-[#e2e0d8] rounded overflow-hidden">
   <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
     <span className="text-[10px] uppercase tracking-[0.12em] text-[#8a8a84] min-w-[68px]">
       Section 04
@@ -538,7 +538,7 @@ export default function OnboardingForm() {
 
 {/* SECTION 05 */}
 
-<div className="mb-8 border border-[#e2e0d8] rounded bg-white overflow-hidden">
+<div className="mb-8 border border-[#e2e0d8] rounded overflow-hidden">
   <div className="bg-[#f2f0ea] border-b border-[#e2e0d8] px-6 py-4 flex items-center gap-4">
     <span className="text-[10px] uppercase tracking-[0.12em] text-[#8a8a84] min-w-[68px]">
       Section 05
