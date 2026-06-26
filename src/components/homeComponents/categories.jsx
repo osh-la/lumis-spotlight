@@ -36,7 +36,7 @@ export default function Categories() {
             className="category-slide w-screen h-full flex flex-col md:flex-row
                        items-center justify-center p-6 gap-8 md:gap-16 shrink-0"
           >
-            <div className="relative w-full h-72 md:w-[28rem] md:h-[28rem] overflow-hidden md:rounded-3xl">
+            <div className="relative w-full h-100 md:w-[28rem] md:h-[28rem] overflow-hidden md:rounded-3xl">
               {cat.img2.endsWith(".mp4") ? (
                 <video
                   autoPlay
