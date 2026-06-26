@@ -40,7 +40,19 @@
   {
     "id": 7,
     "name": "Faith. Service. Recognition.",
-    "category": "OCCASIONS",
+    "category": "EVENTS",
     "image": "/faith.mp4"
+  },
+   {
+    "id": 8,
+    "name": "Birthday",
+    "category": "BIRTHDAYS",
+    "image": "/birthday0.mp4"
+  },
+  {
+    "id": 9,
+    "name": "Brand story",
+    "category": "BRAND STORYTELLING",
+    "image": "/location.mp4"
   }
 ]

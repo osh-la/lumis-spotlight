@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TransitionLink from "../components/transitionLink";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,7 +52,7 @@ export default function About() {
     >
       <section>
         <h1 className="text-4xl md:text-6xl font-bold mb-8 text-center md:text-left">
-        Our Little Story
+          About Lumi Spotlight
         </h1>
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <video
@@ -64,16 +65,25 @@ export default function About() {
           >
             Your browser does not support the video tag.
           </video>
-          <div className="flex flex-col gap-4 text-base md:text-lg text-center md:text-left">
-            <p>
-              Me i dont know the story oo, but if you let me write something random i think i will just do that in the next paragraph and you asked when i was talking to my self
-              in your dm if it gets crazier, well i guess you are about to find out.
+          <div className="max-w-3xl space-y-6 text-center md:text-left">
+            <p className="font-inter text-[17px] md:text-[19px] leading-8 tracking-[0.01em] text-neutral-700">
+              It started with a phone camera and a love for creativity—no
+              business plan, no fancy gear, just me capturing moments I found
+              beautiful. Then people started noticing.{" "}
+              <span className="italic">"Who shot this?"</span>{" "}
+              <span className="italic">"I need you to cover my event."</span>{" "}
+              Again and again, the reactions made it clear: this wasn't just a
+              hobby—it was a gift worth building a brand around. That's how
+              <span className="font-semibold text-black"> Lumi Spotlight </span>
+              was born: out of genuine passion, not a forced idea.
             </p>
-            <p>
-              It all started when i saw this tall dark very handsome and good looking guy walking towards me at AYA, the aura of his presence blew me right away! i didnt know who this was but i knew i wanted to see him again,
-             but i am very shy so i definitly wasnt going to stop him and ask for his name or his number but i knew i wouldnt be happy if i didnt get to see him again, he was getting closer, i knew i had to think and act fast, so i took out my phone and started making a video of him as he walked towards me! the closer he got the more angles i changed
-             so i could capture all his essence and more importantly not get caught while at it, when he got where i was he looked me in the eyes, held my arms and said "hi, im oshla..i know what you were doing, i hope it turns out as great as you hope" and he walked away majestically, something told me this guy was a prince and yes he smelled amazing too!
-             when i got home i watched those videos and omg! it was the best thing i had seen all day!it was in that moment i realized i was good at this and i decided i was going to make the best out of this and well, as they say.. the rest is history.
+
+            <p className="font-inter text-[17px] md:text-[19px] leading-8 tracking-[0.01em] text-neutral-700">
+              Today, we tell stories through photography and video—shot entirely
+              on mobile—for brands, events, and individuals who want their
+              moments captured exactly the way they felt, not just the way they
+              looked. Every shoot is treated with the same care that started it
+              all.
             </p>
           </div>
         </div>
@@ -85,33 +95,22 @@ export default function About() {
       >
         <h1
           ref={addTextRef}
-          className="text-5xl sm:text-6xl md:text-8xl font-bold mb-6 text-center"
+          className="max-w-4xl mx-auto text-center font-serif text-3xl sm:text-4xl md:text-5xl leading-tight tracking-tight text-black"
         >
-          test
+          Every story deserves to be remembered.
+          <br />
+          Let's create yours.
         </h1>
-        <p
-          ref={addTextRef}
-          className="max-w-3xl mb-4 text-center text-sm sm:text-base md:text-lg"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-          harum ipsam officiis blanditiis debitis eius, iure doloremque
-          perferendis nulla possimus, natus error numquam culpa magnam
-          inventore, quo odit fuga reprehenderit.
-        </p>
-        <p
+        <div
           ref={addTextRef}
           className="max-w-3xl text-center text-sm sm:text-base md:text-lg"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          nulla et voluptate est, hic incidunt aliquam quas deserunt, repellat
-          dignissimos quos odit? Saepe omnis similique perspiciatis incidunt
-          architecto officiis ratione!
-        </p>
-         <Link to="/booking">
+          <TransitionLink to="/onboarding">
             <button className="rounded-full bg-black text-white px-8 py-4 text-sm md:text-base uppercase">
               Book a Session
             </button>
-          </Link>
+          </TransitionLink>
+        </div>
       </section>
     </section>
   );

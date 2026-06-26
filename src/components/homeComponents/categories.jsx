@@ -5,17 +5,17 @@ import { useSectionRefs } from "../../context/sectionRefs";
 const categories = [
   { id: 1, title: "WEDDINGS", slug: "Weddings", img2: "/wedding2.mp4" },
   { id: 2, title: "COOPERATE EVENTS", slug: "events", img2: "/event.mp4" },
-  { id: 3, title: "OCCASIONS", slug: "occasion", img2: "/faith.mp4" },
+  { id: 3, title: "EVENTS", slug: "occasion", img2: "/faith.mp4" },
   {
     id: 4,
     title: "BABY SHOWERS",
     slug: "baby shower",
     img2: "/babyshower.mp4",
   },
-  { id: 5, title: "BIRTHDAYS ", slug: "birthdays", img2: "/birthday.mp4" },
+  { id: 5, title: "BIRTHDAYS ", slug: "birthdays", img2: "/birthday0.mp4" },
   {
     id: 6,
-    title: "LOCATION COVERAGE",
+    title: "BRAND STORYTELLING",
     slug: "location",
     img2: "/location.mp4",
   },
@@ -36,7 +36,7 @@ export default function Categories() {
             className="category-slide w-screen h-full flex flex-col md:flex-row
                        items-center justify-center p-6 gap-8 md:gap-16 shrink-0"
           >
-            <div className="relative w-72 h-72 md:w-[28rem] md:h-[28rem] overflow-hidden rounded-3xl">
+            <div className="relative w-full h-72 md:w-[28rem] md:h-[28rem] overflow-hidden md:rounded-3xl">
               {cat.img2.endsWith(".mp4") ? (
                 <video
                   autoPlay
