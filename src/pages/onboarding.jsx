@@ -160,7 +160,7 @@ export default function OnboardingForm() {
             </div>
 
             <h1 className="font-serif text-3xl md:text-5xl leading-tight font-normal">
-              Client Onboarding Form
+             Onboarding Form
             </h1>
           </div>
 
