@@ -15,9 +15,9 @@ export default function Gallery() {
     "All",
     "WEDDINGS",
     "COOPERATE EVENTS",
-    "EVENTS",
-    "BIRTHDAYS",
-    "BABY SHOWERS",
+    "LIFESTYLE",
+    "BIRTHDAYS & BABY SHOWERS",
+    "LARGE SCALE EVENTS",
     "BRAND STORYTELLING",
   ];
   const [filter, setFilter] = useState("All");

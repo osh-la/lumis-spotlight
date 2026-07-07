@@ -4,20 +4,25 @@ import { useSectionRefs } from "../../context/sectionRefs";
 
 const categories = [
   { id: 1, title: "WEDDINGS", slug: "Weddings", img2: "/wedding2.mp4" },
-  { id: 2, title: "COOPERATE EVENTS", slug: "events", img2: "/event.mp4" },
-  { id: 3, title: "EVENTS", slug: "occasion", img2: "/faith.mp4" },
+  { id: 2, title: "COPERATE EVENTS", slug: "events", img2: "/event.mp4" },
+  { id: 3, title: "LIFESTYLE", slug: "lifestyle", img2: "/faith.mp4" },
   {
     id: 4,
-    title: "BABY SHOWERS",
+    title: "BIRTHDAYS & BABY SHOWERS",
     slug: "baby shower",
     img2: "/babyshower.mp4",
   },
-  { id: 5, title: "BIRTHDAYS ", slug: "birthdays", img2: "/birthday0.mp4" },
-  {
+   {
+    id: 5,
+    title: "LARGE SCALE EVENTS",
+    slug: "Large scale events",
+    img2: "/largescale1.mp4",
+  },{
+ 
     id: 6,
     title: "BRAND STORYTELLING",
-    slug: "location",
-    img2: "/location.mp4",
+    slug: "brandstory",
+    img2: "/brandstorytelling1.mp4",
   },
 ];
 
