@@ -14,7 +14,7 @@ export default function Gallery() {
   const categories = [
     "All",
     "WEDDINGS",
-    "COOPERATE EVENTS",
+    "CORPERATE EVENTS",
     "LIFESTYLE",
     "BIRTHDAYS & BABY SHOWERS",
     "LARGE SCALE EVENTS",

@@ -4,12 +4,12 @@ import { useSectionRefs } from "../../context/sectionRefs";
 
 const categories = [
   { id: 1, title: "WEDDINGS", slug: "Weddings", img2: "/wedding2.mp4" },
-  { id: 2, title: "COPERATE EVENTS", slug: "events", img2: "/event.mp4" },
+  { id: 2, title: "CORPERATE EVENTS", slug: "corperate events", img2: "/event.mp4" },
   { id: 3, title: "LIFESTYLE", slug: "lifestyle", img2: "/faith.mp4" },
   {
     id: 4,
     title: "BIRTHDAYS & BABY SHOWERS",
-    slug: "baby shower",
+    slug: "birthdays & baby shower",
     img2: "/babyshower.mp4",
   },
    {
