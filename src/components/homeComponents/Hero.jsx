@@ -8,7 +8,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={hero}
-      className="relative min-h-screen bg-[#f7f4ee] overflow-hidden"
+      className="mt-0 md:mt-25 relative min-h-screen bg-[#f7f4ee] overflow-hidden"
     >
       <div className="grid lg:grid-cols-2 min-h-screen">
         {/* LEFT SIDE */}

@@ -100,7 +100,7 @@ function AnimationsController() {
             ease: "power1.in",
             scrollTrigger: {
               trigger: hero.current || videoRef.current,
-              start: "top top",
+              start: "top 80%",
               end: "bottom top",
               scrub: true,
             },
