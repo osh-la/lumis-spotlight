@@ -4,6 +4,7 @@ import Categories from "../components/homeComponents/categories";
 import History from "../components/homeComponents/history";
 import LookoutSection from "../components/homeComponents/lookOut";
 import Subscribe from "../components/homeComponents/subscribe";
+import GetStarted from "../components/homeComponents/getStarted";
 const Home = () => {
   return (
     <section className="">
@@ -13,6 +14,7 @@ const Home = () => {
       <History />
       <LookoutSection/>
       <Subscribe/>
+       <GetStarted/>
     </section>
   );
 };

@@ -194,7 +194,7 @@ export default function OnboardingForm() {
 
             </div>
 
-            <div className="p-6">
+            <div className="p-6 bg-white">
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-4 mb-4">
 
@@ -309,7 +309,7 @@ export default function OnboardingForm() {
 
             </div>
 
-            <div className="p-6">
+            <div className="p-6 bg-white">
 
               <div className="text-[11px] uppercase tracking-[0.08em] text-[#8a8a84] font-medium mb-3">
                 Service type *
@@ -465,7 +465,7 @@ export default function OnboardingForm() {
     </span>
   </div>
 
-  <div className="p-6">
+  <div className="p-6 bg-white">
     <div className="bg-[#f2f0ea] border-l-[3px] border-[#c8a96e] rounded-r px-5 py-4 mb-5 text-[13.5px] text-[#4a4a46] leading-[1.75]">
       <strong className="text-[#1a1a18]">Delivery policy:</strong> All
       edited content — reels and photos — will be delivered within{" "}
@@ -507,7 +507,7 @@ export default function OnboardingForm() {
     </span>
   </div>
 
-  <div className="p-6">
+  <div className="p-6 bg-white">
     <div className="bg-[#f2f0ea] border-l-[3px] border-[#c8a96e] rounded-r px-5 py-4 mb-5 text-[13.5px] text-[#4a4a46] leading-[1.75]">
       <strong className="text-[#1a1a18]">Usage rights:</strong> By
       submitting this form, the client grants{" "}
@@ -552,7 +552,7 @@ export default function OnboardingForm() {
     </span>
   </div>
 
-  <div className="p-6">
+  <div className="p-6 bg-white">
     <div className="bg-[#f2f0ea] border-l-[3px] border-[#c8a96e] rounded-r px-5 py-4 mb-5 text-[13.5px] text-[#4a4a46] leading-[1.75]">
       <strong className="text-[#1a1a18]">Revision policy:</strong> Each
       booking includes a maximum of <strong>2 rounds of revisions.</strong>{" "}
@@ -596,7 +596,7 @@ export default function OnboardingForm() {
     </span>
   </div>
 
-  <div className="p-6">
+  <div className="p-6 bg-white">
     <div className="grid md:grid-cols-2 gap-4 mb-5">
       <div className="border border-[#c8a96e] rounded p-4 bg-[#f5edd8]">
         <div

@@ -10,8 +10,6 @@ export default function About() {
       className="relative overflow-hidden bg-red-50 px-6 py-20 md:px-20"
     >
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-16 md:flex-row md:justify-between">
-        
-     
         <div
           ref={aboutImage1}
           className="relative w-full max-w-md flex justify-center"
@@ -28,11 +26,16 @@ export default function About() {
             Your browser does not support the video tag.
           </video>
 
-          <img
-            src="/images/about.png"
-            alt="Decoration"
-            className="absolute -bottom-10 -right-6 w-28 md:w-52"
-          />
+          <video
+            src="/logovid.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute -bottom-10 -right-6 w-28 md:w-52 md:h-64 object-cover"
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         {/* TEXT */}
@@ -57,13 +60,8 @@ export default function About() {
           <TransitionLink to="/About">
             <button className="flex items-center gap-3 rounded-full border-2 border-gray-800 px-6 py-3 tracking-[0.2em] transition hover:bg-black hover:text-white">
               ABOUT US
-
               <div className="rounded-full bg-white p-2">
-                <img
-                  className="h-4 w-4"
-                  src="/images/right.png"
-                  alt=""
-                />
+                <img className="h-4 w-4" src="/images/right.png" alt="" />
               </div>
             </button>
           </TransitionLink>

@@ -1,4 +1,4 @@
-// LookoutSection.jsx
+
 import { useSectionRefs } from "../../context/sectionRefs";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const LookoutSection = () => {
       ref={lookoutSection}
       className="relative min-h-[100vh] w-full flex flex-col md:flex-row overflow-hidden bg-red-50"
     >
-      <div className="w-full md:w-1/2 h-[85vh] md:h-full relative z-10 overflow-hidden">
+      <div className="w-full md:w-1/2 h-[85vh] md:h-full relative z-10 overflow-hidden ">
         <video
           ref={lookoutImage}
           src="/lookout.mp4"
@@ -18,7 +18,7 @@ const LookoutSection = () => {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover pointer-events-none"
+          className="w-full h-full object-cover pointer-events-none rounded-4xl"
         />
       </div>
       <div className="w-full md:w-1/2 h-full flex items-center justify-center px-4 sm:px-10 z-20">
